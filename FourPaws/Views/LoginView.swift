@@ -1,30 +1,13 @@
 //
-//  ContentView.swift
+//  LoginView.swift
 //  FourPaws
 //
-//  Created by Андрей Шевчук on 09.02.2021.
+//  Created by Андрей Шевчук on 10.02.2021.
 //
 
 import SwiftUI
 
-struct ContentView: View {
-    var body: some View {
-        Login()
-    }
-}
-
-struct Home: View {
-    
-    
-    var body: some View {
-        VStack {
-            
-            Spacer()
-        }
-    }
-}
-
-struct Login: View {
+struct LoginView: View {
     @State var username: String = ""
     @State var password: String = ""
     @State var visiblePassword: Bool = false
@@ -37,11 +20,11 @@ struct Login: View {
                 Image("logo")
                     .resizable()
                     .aspectRatio(contentMode: .fit)
-                Text("Увійти")
+                Text(LoginStrings.login)
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.top, 35)
-                TextField("Ім'я", text: $username)
+                TextField(LoginStrings.username, text: $username)
                     .padding()
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -50,9 +33,9 @@ struct Login: View {
                 HStack(spacing: 15) {
                     VStack {
                         if self.visiblePassword {
-                            TextField("Пароль", text: $password)
+                            TextField(LoginStrings.password, text: $password)
                         } else {
-                            SecureField("Пароль", text: $password)
+                            SecureField(LoginStrings.password, text: $password)
                         }
                     }
                     Button(action: {
@@ -68,7 +51,7 @@ struct Login: View {
                 .padding(.top, 25)
                 
                 Button(action: {}) {
-                    Text("Увійти")
+                    Text(LoginStrings.login)
                         .foregroundColor(.black)
                         .padding(.vertical)
                         .frame(width: UIScreen.main.bounds.width - 150)
@@ -77,30 +60,24 @@ struct Login: View {
                 .cornerRadius(50)
                 .padding(.top, 25)
                 
-                Text("Ще не маєте аккаунта?")
+                Text(LoginStrings.haveAnAccount)
                     .padding(.top, 25)
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Реєстрація")
+                    Text(LoginStrings.register)
                 })
                 .padding(.top, 2)
                 
-                Text("Або")
+                Text(LoginStrings.or)
                     .padding(.top, 2)
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Увійти за допомогою гугл")
+                    Text(LoginStrings.signInWithGoogle)
                 })
                 .padding(.top, 2)
             }
             .padding(.horizontal, 25)
         }
         .edgesIgnoringSafeArea(.all)
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
     }
 }

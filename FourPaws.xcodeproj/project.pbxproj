@@ -14,6 +14,7 @@
 		D33E98FA25D3079A00318B38 /* FourPawsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E98F925D3079A00318B38 /* FourPawsTests.swift */; };
 		D33E990525D3079A00318B38 /* FourPawsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E990425D3079A00318B38 /* FourPawsUITests.swift */; };
 		D33E991625D307CE00318B38 /* StringValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E991525D307CE00318B38 /* StringValues.swift */; };
+		D39198E225D47C9C00B75173 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D39198E125D47C9C00B75173 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		D33E990425D3079A00318B38 /* FourPawsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourPawsUITests.swift; sourceTree = "<group>"; };
 		D33E990625D3079A00318B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D33E991525D307CE00318B38 /* StringValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringValues.swift; sourceTree = "<group>"; };
+		D39198E125D47C9C00B75173 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,10 +100,10 @@
 			isa = PBXGroup;
 			children = (
 				D33E98E725D3079400318B38 /* FourPawsApp.swift */,
-				D33E98E925D3079400318B38 /* ContentView.swift */,
+				D39198DD25D47C8900B75173 /* Views */,
+				D33E991A25D307F700318B38 /* Helpers */,
 				D33E98EB25D3079A00318B38 /* Assets.xcassets */,
 				D33E98F025D3079A00318B38 /* Info.plist */,
-				D33E991A25D307F700318B38 /* Helpers */,
 				D33E98ED25D3079A00318B38 /* Preview Content */,
 			);
 			path = FourPaws;
@@ -139,6 +141,15 @@
 				D33E991525D307CE00318B38 /* StringValues.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D39198DD25D47C8900B75173 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				D33E98E925D3079400318B38 /* ContentView.swift */,
+				D39198E125D47C9C00B75173 /* LoginView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -272,6 +283,7 @@
 			files = (
 				D33E991625D307CE00318B38 /* StringValues.swift in Sources */,
 				D33E98EA25D3079400318B38 /* ContentView.swift in Sources */,
+				D39198E225D47C9C00B75173 /* LoginView.swift in Sources */,
 				D33E98E825D3079400318B38 /* FourPawsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
