@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D3394B3F25DDB696007C9B19 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B3E25DDB696007C9B19 /* LoginViewModel.swift */; };
+		D3394B4B25DDBCF2007C9B19 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B4A25DDBCF2007C9B19 /* RegistrationViewModel.swift */; };
+		D3394B5025DDC314007C9B19 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B4F25DDC314007C9B19 /* LoginModel.swift */; };
+		D3394B5C25DDC37D007C9B19 /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B5B25DDC37D007C9B19 /* ApiService.swift */; };
 		D33E98E825D3079400318B38 /* FourPawsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E98E725D3079400318B38 /* FourPawsApp.swift */; };
 		D33E98EA25D3079400318B38 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D33E98E925D3079400318B38 /* ContentView.swift */; };
 		D33E98EC25D3079A00318B38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33E98EB25D3079A00318B38 /* Assets.xcassets */; };
@@ -36,6 +40,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D3394B3E25DDB696007C9B19 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		D3394B4A25DDBCF2007C9B19 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
+		D3394B4F25DDC314007C9B19 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		D3394B5B25DDC37D007C9B19 /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		D33E98E425D3079400318B38 /* FourPaws.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourPaws.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33E98E725D3079400318B38 /* FourPawsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourPawsApp.swift; sourceTree = "<group>"; };
 		D33E98E925D3079400318B38 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -78,6 +86,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D3394B4325DDB69B007C9B19 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D3394B3E25DDB696007C9B19 /* LoginViewModel.swift */,
+				D3394B4A25DDBCF2007C9B19 /* RegistrationViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		D3394B5425DDC318007C9B19 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D3394B4F25DDC314007C9B19 /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D33E98DB25D3079400318B38 = {
 			isa = PBXGroup;
 			children = (
@@ -102,7 +127,10 @@
 			isa = PBXGroup;
 			children = (
 				D33E98E725D3079400318B38 /* FourPawsApp.swift */,
+				D3394B5B25DDC37D007C9B19 /* ApiService.swift */,
+				D3394B5425DDC318007C9B19 /* Models */,
 				D39198DD25D47C8900B75173 /* Views */,
+				D3394B4325DDB69B007C9B19 /* ViewModels */,
 				D33E991A25D307F700318B38 /* Helpers */,
 				D33E98EB25D3079A00318B38 /* Assets.xcassets */,
 				D33E98F025D3079A00318B38 /* Info.plist */,
@@ -286,7 +314,11 @@
 			files = (
 				D33E991625D307CE00318B38 /* StringValues.swift in Sources */,
 				D33E98EA25D3079400318B38 /* ContentView.swift in Sources */,
+				D3394B3F25DDB696007C9B19 /* LoginViewModel.swift in Sources */,
+				D3394B4B25DDBCF2007C9B19 /* RegistrationViewModel.swift in Sources */,
 				D39198E225D47C9C00B75173 /* LoginView.swift in Sources */,
+				D3394B5C25DDC37D007C9B19 /* ApiService.swift in Sources */,
+				D3394B5025DDC314007C9B19 /* LoginModel.swift in Sources */,
 				D33E98E825D3079400318B38 /* FourPawsApp.swift in Sources */,
 				D39198F925D480B600B75173 /* RegistrationView.swift in Sources */,
 			);

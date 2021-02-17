@@ -8,12 +8,7 @@
 import SwiftUI
 
 struct RegistrationView: View {
-    @State var email: String = ""
-    @State var username: String = ""
-    @State var password: String = ""
-    @State var checkPassword: String = ""
-    @State var visiblePassword: Bool = true
-    @State var visibleChekPassword: Bool = true
+    @ObservedObject private var viewModel: RegistrationViewModel = RegistrationViewModel()
     
     var textFieldWidth = UIScreen.main.bounds.width - 50
     
@@ -26,13 +21,13 @@ struct RegistrationView: View {
                 Text("Реєстрація")
                     .padding()
                     .font(.title)
-                TextField("Електронна пошта", text: $email)
+                TextField("Електронна пошта", text: $viewModel.email)
                     .padding()
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
                     .frame(width: textFieldWidth)
                     .padding(.top, 25)
-                TextField("Ім'я", text: $username)
+                TextField("Ім'я", text: $viewModel.username)
                     .padding()
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -42,16 +37,16 @@ struct RegistrationView: View {
                 
                 HStack(spacing: 15) {
                     VStack {
-                        if self.visiblePassword {
-                            TextField(LoginStrings.password, text: $password)
+                        if viewModel.visiblePassword {
+                            TextField(LoginStrings.password, text: $viewModel.password)
                         } else {
-                            SecureField(LoginStrings.password, text: $password)
+                            SecureField(LoginStrings.password, text: $viewModel.password)
                         }
                     }
                     Button(action: {
-                        self.visiblePassword.toggle()
+                        viewModel.visiblePassword = !viewModel.visiblePassword
                     }, label: {
-                        Image(systemName: self.visiblePassword ? "eye.slash.fill" : "eye.fill")
+                        Image(systemName: viewModel.visiblePassword ? "eye.slash.fill" : "eye.fill")
                             .foregroundColor(.black)
                     })
                 }
@@ -64,16 +59,16 @@ struct RegistrationView: View {
                 
                 HStack(spacing: 15) {
                     VStack {
-                        if self.visibleChekPassword {
-                            TextField(LoginStrings.password, text: $checkPassword)
+                        if viewModel.visibleChekPassword {
+                            TextField(LoginStrings.password, text: $viewModel.checkPassword)
                         } else {
-                            SecureField(LoginStrings.password, text: $checkPassword)
+                            SecureField(LoginStrings.password, text: $viewModel.checkPassword)
                         }
                     }
                     Button(action: {
-                        self.visibleChekPassword.toggle()
+                        viewModel.visibleChekPassword = !viewModel.visibleChekPassword
                     }, label: {
-                        Image(systemName: self.visiblePassword ? "eye.slash.fill" : "eye.fill")
+                        Image(systemName: viewModel.visibleChekPassword ? "eye.slash.fill" : "eye.fill")
                             .foregroundColor(.black)
                     })
                 }

@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct LoginView: View {
-    @State var username: String = ""
-    @State var password: String = ""
-    @State var visiblePassword: Bool = false
+    @ObservedObject private var viewModel: LoginViewModel = LoginViewModel()
     
     var body: some View {
         ZStack {
@@ -24,7 +22,7 @@ struct LoginView: View {
                     .font(.title)
                     .fontWeight(.bold)
                     .padding(.top, 35)
-                TextField(LoginStrings.username, text: $username)
+                TextField(LoginStrings.username, text: $viewModel.username)
                     .padding()
                     .background(Color.white)
                     .clipShape(RoundedRectangle(cornerRadius: 50))
@@ -32,16 +30,16 @@ struct LoginView: View {
                 
                 HStack(spacing: 15) {
                     VStack {
-                        if self.visiblePassword {
-                            TextField(LoginStrings.password, text: $password)
+                        if viewModel.visiblePassword {
+                            TextField(LoginStrings.password, text: $viewModel.password)
                         } else {
-                            SecureField(LoginStrings.password, text: $password)
+                            SecureField(LoginStrings.password, text: $viewModel.password)
                         }
                     }
                     Button(action: {
-                        self.visiblePassword.toggle()
+                        viewModel.changeVisiblePasword()
                     }, label: {
-                        Image(systemName: self.visiblePassword ? "eye.slash.fill" : "eye.fill")
+                        Image(systemName: viewModel.visiblePassword ? "eye.slash.fill" : "eye.fill")
                             .foregroundColor(.black)
                     })
                 }
