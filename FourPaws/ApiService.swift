@@ -9,20 +9,26 @@ import Foundation
 import Alamofire
 import Combine
 
-class WebService {
-    func login()  -> AnyPublisher<LoginModel, Error>{
-        let urlString = ""
-        let decoder = JSONDecoder()
-        
-        guard let url = URL(string: urlString) else {
-            fatalError() // customize error handling
-        }
-        
-        return URLSession.shared.dataTaskPublisher(for: url)
-            .map { $0.data }
-            .decode(type: LoginModel.self, decoder: decoder)
-            .map { $0 }
-            .receive(on: RunLoop.main)
-            .eraseToAnyPublisher()
+struct ApiService {
+    static func request<T: Decodable, E: Error> (url: String,
+                                          method: HTTPMethod,
+                                          parameters: Parameters? = nil,
+                                          decoder: JSONDecoder = JSONDecoder(),
+                                          headers: HTTPHeaders? = nil) -> Future<T,E> {
+        return Future( { promise in
+            AF.request(url,
+                       method: method,
+                       parameters: parameters,
+                       headers: headers).responseDecodable(decoder: decoder) { (response: DataResponse<T, AFError>) in
+                        switch response.result {
+                        case .success(let data):
+                            promise(.success(data))
+                        case .failure(let error):
+                            promise(.failure(NSError(domain: error.destinationURL?.absoluteString ?? "", code: error.responseCode ?? 0) as! E
+                            ))
+                        }
+                }
+            }
+        )
     }
 }

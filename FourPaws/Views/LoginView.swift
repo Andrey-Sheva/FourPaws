@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Combine
 
 struct LoginView: View {
     @ObservedObject private var viewModel: LoginViewModel = LoginViewModel()
@@ -48,7 +49,9 @@ struct LoginView: View {
                 .clipShape(RoundedRectangle(cornerRadius: 50))
                 .padding(.top, 25)
                 
-                Button(action: {}) {
+                Button(action: {
+                   let response = self.viewModel.login()
+                }) {
                     Text(LoginStrings.login)
                         .foregroundColor(.black)
                         .padding(.vertical)

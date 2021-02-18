@@ -7,12 +7,11 @@
 
 import Foundation
 
-struct LoginModel: Decodable, Identifiable {
-    var id: UUID = UUID()
-    let name: String?
+struct LoginModel: Decodable{
+    let email: String?
     let password: String?
     
     static var placeholder: LoginModel {
-        return LoginModel(name: nil, password: nil)
+        return LoginModel(email: nil, password: nil)
     }
 }
