@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8750E2EE3B270CA6932AE3B9 /* Pods_FourPaws.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5BB13875212AF5B5E2F6E2 /* Pods_FourPaws.framework */; };
+		92AD37DAE116488CB75A5A4C /* Pods_FourPawsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 051B20EE3F2F56B5B40A6410 /* Pods_FourPawsTests.framework */; };
+		B58E40E8368BBEEA22A5EB43 /* Pods_FourPaws_FourPawsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EECE7A4F6E637757CCB166E0 /* Pods_FourPaws_FourPawsUITests.framework */; };
 		D3394B3F25DDB696007C9B19 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B3E25DDB696007C9B19 /* LoginViewModel.swift */; };
 		D3394B4B25DDBCF2007C9B19 /* RegistrationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B4A25DDBCF2007C9B19 /* RegistrationViewModel.swift */; };
 		D3394B5025DDC314007C9B19 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3394B4F25DDC314007C9B19 /* LoginModel.swift */; };
@@ -40,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		051B20EE3F2F56B5B40A6410 /* Pods_FourPawsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourPawsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D5BB13875212AF5B5E2F6E2 /* Pods_FourPaws.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourPaws.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		24BBA1E7CAA503C11D14F98C /* Pods-FourPaws-FourPawsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPaws-FourPawsUITests.debug.xcconfig"; path = "Target Support Files/Pods-FourPaws-FourPawsUITests/Pods-FourPaws-FourPawsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		48A081F8465BCA4BC6FDCB10 /* Pods-FourPawsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPawsTests.debug.xcconfig"; path = "Target Support Files/Pods-FourPawsTests/Pods-FourPawsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4A6A43CEB7C44A81E9723C69 /* Pods-FourPawsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPawsTests.release.xcconfig"; path = "Target Support Files/Pods-FourPawsTests/Pods-FourPawsTests.release.xcconfig"; sourceTree = "<group>"; };
+		587D8B2A8675A89379875722 /* Pods-FourPaws-FourPawsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPaws-FourPawsUITests.release.xcconfig"; path = "Target Support Files/Pods-FourPaws-FourPawsUITests/Pods-FourPaws-FourPawsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		5C9C1715BFA502BC706893B3 /* Pods-FourPaws.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPaws.release.xcconfig"; path = "Target Support Files/Pods-FourPaws/Pods-FourPaws.release.xcconfig"; sourceTree = "<group>"; };
 		D3394B3E25DDB696007C9B19 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		D3394B4A25DDBCF2007C9B19 /* RegistrationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewModel.swift; sourceTree = "<group>"; };
 		D3394B4F25DDC314007C9B19 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
@@ -59,6 +69,8 @@
 		D33E991525D307CE00318B38 /* StringValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringValues.swift; sourceTree = "<group>"; };
 		D39198E125D47C9C00B75173 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		D39198F825D480B600B75173 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		EECE7A4F6E637757CCB166E0 /* Pods_FourPaws_FourPawsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FourPaws_FourPawsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F348FBE6C3B0A150BF489875 /* Pods-FourPaws.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourPaws.debug.xcconfig"; path = "Target Support Files/Pods-FourPaws/Pods-FourPaws.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8750E2EE3B270CA6932AE3B9 /* Pods_FourPaws.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92AD37DAE116488CB75A5A4C /* Pods_FourPawsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,12 +94,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B58E40E8368BBEEA22A5EB43 /* Pods_FourPaws_FourPawsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37062FEB8B3FFF72C9158936 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F348FBE6C3B0A150BF489875 /* Pods-FourPaws.debug.xcconfig */,
+				5C9C1715BFA502BC706893B3 /* Pods-FourPaws.release.xcconfig */,
+				24BBA1E7CAA503C11D14F98C /* Pods-FourPaws-FourPawsUITests.debug.xcconfig */,
+				587D8B2A8675A89379875722 /* Pods-FourPaws-FourPawsUITests.release.xcconfig */,
+				48A081F8465BCA4BC6FDCB10 /* Pods-FourPawsTests.debug.xcconfig */,
+				4A6A43CEB7C44A81E9723C69 /* Pods-FourPawsTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D3394B4325DDB69B007C9B19 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +139,8 @@
 				D33E98F825D3079A00318B38 /* FourPawsTests */,
 				D33E990325D3079A00318B38 /* FourPawsUITests */,
 				D33E98E525D3079400318B38 /* Products */,
+				37062FEB8B3FFF72C9158936 /* Pods */,
+				D4E29EF73ACB1A6FA3450961 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -183,6 +214,16 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D4E29EF73ACB1A6FA3450961 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D5BB13875212AF5B5E2F6E2 /* Pods_FourPaws.framework */,
+				EECE7A4F6E637757CCB166E0 /* Pods_FourPaws_FourPawsUITests.framework */,
+				051B20EE3F2F56B5B40A6410 /* Pods_FourPawsTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -190,9 +231,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D33E990925D3079A00318B38 /* Build configuration list for PBXNativeTarget "FourPaws" */;
 			buildPhases = (
+				B1B319021F628D7AACBD4C31 /* [CP] Check Pods Manifest.lock */,
 				D33E98E025D3079400318B38 /* Sources */,
 				D33E98E125D3079400318B38 /* Frameworks */,
 				D33E98E225D3079400318B38 /* Resources */,
+				500A5C2D8E90BC81C1A56F72 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +250,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D33E990C25D3079A00318B38 /* Build configuration list for PBXNativeTarget "FourPawsTests" */;
 			buildPhases = (
+				F966ABE92C577B445178AFC3 /* [CP] Check Pods Manifest.lock */,
 				D33E98F125D3079A00318B38 /* Sources */,
 				D33E98F225D3079A00318B38 /* Frameworks */,
 				D33E98F325D3079A00318B38 /* Resources */,
@@ -225,9 +269,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D33E990F25D3079A00318B38 /* Build configuration list for PBXNativeTarget "FourPawsUITests" */;
 			buildPhases = (
+				964E1C814AA3550EF50C69B5 /* [CP] Check Pods Manifest.lock */,
 				D33E98FC25D3079A00318B38 /* Sources */,
 				D33E98FD25D3079A00318B38 /* Frameworks */,
 				D33E98FE25D3079A00318B38 /* Resources */,
+				BE459BE6546B3EB02C9D917D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -306,6 +352,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		500A5C2D8E90BC81C1A56F72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourPaws/Pods-FourPaws-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourPaws/Pods-FourPaws-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FourPaws/Pods-FourPaws-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		964E1C814AA3550EF50C69B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourPaws-FourPawsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B1B319021F628D7AACBD4C31 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourPaws-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE459BE6546B3EB02C9D917D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourPaws-FourPawsUITests/Pods-FourPaws-FourPawsUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FourPaws-FourPawsUITests/Pods-FourPaws-FourPawsUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FourPaws-FourPawsUITests/Pods-FourPaws-FourPawsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F966ABE92C577B445178AFC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FourPawsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D33E98E025D3079400318B38 /* Sources */ = {
@@ -474,6 +623,7 @@
 		};
 		D33E990A25D3079A00318B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F348FBE6C3B0A150BF489875 /* Pods-FourPaws.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -496,6 +646,7 @@
 		};
 		D33E990B25D3079A00318B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C9C1715BFA502BC706893B3 /* Pods-FourPaws.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -518,6 +669,7 @@
 		};
 		D33E990D25D3079A00318B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48A081F8465BCA4BC6FDCB10 /* Pods-FourPawsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -540,6 +692,7 @@
 		};
 		D33E990E25D3079A00318B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6A43CEB7C44A81E9723C69 /* Pods-FourPawsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -562,6 +715,7 @@
 		};
 		D33E991025D3079A00318B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24BBA1E7CAA503C11D14F98C /* Pods-FourPaws-FourPawsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -582,6 +736,7 @@
 		};
 		D33E991125D3079A00318B38 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 587D8B2A8675A89379875722 /* Pods-FourPaws-FourPawsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
